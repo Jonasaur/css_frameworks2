@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: clamp(3rem, 10vw, 100pt); 
+    margin-bottom: 2rem;
+    font-weight: 900 !important;
+}
+
+.mosaic-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* .item {
+    background-image: url("img/Cocktail Kitten.jpg");
+    background-size: cover;
+    background-position: center;
+} */
+
+
+
+.item-1 { height: 90px; }
+.item-2 { height: 60px; }
+
+.item-3 { height: 300px; } 
+.item-4 { height: 200px; } 
+
+.item-5 { height: 60px; margin-top: 15px; } 
+
+.item-6 { 
+    height: 250px; 
+    margin-top: -85px; 
+    position: relative;
+    z-index: 5;
+}
+
+
+@media (max-width: 768px) {
+    .item-6 { margin-top: 0; }
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
+        height: 250px;
+        width: 100% !important;
+    }
+    .col-3, .col-2, .col-6, .col-4 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
